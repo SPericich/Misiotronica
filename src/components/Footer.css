@@ -1,0 +1,60 @@
+ .caja-footer {
+    background-color: black;
+    color: #8f8f8f;
+    padding:10px 0;
+} 
+
+.containerF {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+
+}
+
+.containerF ul {
+  margin:0 auto;
+    
+}
+
+.containerF ul li {
+    line-height: 2;
+}
+
+.containerF ul li p {
+   font-size: 16px;
+}
+
+.containerF img {
+    width: 30%;
+}
+
+.containerF i {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.containerF h3 {
+    color: #fde503;
+}
+
+@media (max-width: 700px) {
+
+    .containerF ul li {
+        line-height: 1.5;
+    }
+    
+    .containerF ul li p {
+        font-size: 12px;
+     }
+
+    .containerF i {
+        font-size: 25px;
+    }
+     
+    .containerF ul {
+        margin:30px;
+          
+      }
+
+}

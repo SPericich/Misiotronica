@@ -1,0 +1,37 @@
+.social {
+   margin: 20px;
+   color: #fde503;
+}
+
+.social p {
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+
+.social .redes {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.social .redes a {
+   font-size: 35px;
+   color: #ffffff;
+   margin: 0 20px;
+}
+
+.social .redes a:hover {
+   color: #f0d800b6;
+}
+
+@media (max-width: 768px) {
+   .social p {
+      font-size: 25px;
+   }
+
+   .social .redes a {
+      font-size: 25px;
+      margin: 0 10px;
+   }
+}

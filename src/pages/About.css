@@ -1,0 +1,51 @@
+.containerAbout {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: rgba(77, 77, 77, 0.849);
+	margin: 30px;
+	padding: 30px;
+}
+
+.aboutContent p {
+	font-size: 16px;
+	color: white;
+	line-height: 2.5;
+	padding-bottom: 20px;
+}
+
+.fundadores {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 30px;
+}
+
+.fundadores .perfil {
+	width: 60%;
+	border-radius: 50%;
+}
+
+.fundadores ul li {
+	text-align: center;
+	color: #fde503;
+}
+
+.grupal {
+	width: 100%;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+
+    .containerAbout {
+        margin: 30px;
+        padding: 18px;
+    }
+
+	.aboutContent p {
+		font-size: 14px;
+        line-height: 1.5;
+	}
+}

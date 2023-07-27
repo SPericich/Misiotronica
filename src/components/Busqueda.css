@@ -1,0 +1,69 @@
+.barra {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 10px;
+}
+
+.barra input {
+   outline: none;
+   box-sizing: border-box;
+   height: 30px;
+   width: 0px;
+   padding: 0 10px;
+   color: #000;
+   border-radius: 50px;
+   font-size: 15px;
+   border: 1px solid #fde503;
+   transition: all 0.7s ease;
+}
+
+.barra input::placeholder {
+   color: grey;
+}
+
+.btn {
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   width: 40px;
+   height: 40px;
+   background: #fde503;
+   line-height: 40px;
+   border-radius: 50%;
+   border: none;
+   text-align: center;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.btn i {
+   font-size: 25px;
+   color: rgb(0, 0, 0);
+   line-height: 40px;
+   transition: all 0.7s ease;
+}
+
+.barra:hover input {
+   width: 250px;
+}
+
+.barra:hover i {
+   transform: rotate(-360deg);
+}
+
+.btn:hover {
+   cursor:default;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex:auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 25px;
+    margin:10px;
+ }

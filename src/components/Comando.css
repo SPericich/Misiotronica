@@ -1,0 +1,23 @@
+.enlace {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+ }
+ 
+ .enlace:hover {
+    color: #ffffff;
+    text-decoration: underline;
+ }
+ 
+ .enlace:focus {
+    color: rgb(104, 104, 104);
+    text-decoration: underline;
+ }
+
+
+
+
+
+

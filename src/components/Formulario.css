@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    border-radius: 15px;
+    font-size: 14px;
+    border: 1px solid #fde503;
+    padding: 10px;
+    margin: 5px;
+}
+
+.form textarea {
+    width:100%;
+    border-radius: 15px;
+    border: 1px solid #fde503;
+    padding: 10px;
+    margin: 5px;
+}
+
+.form button {
+    border:none;
+    background-color: #fde503;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #fde503;
+}
+
+.form textarea::placeholder {
+    font-size: 16px;
+}
+
+.form button:hover {
+    color: #fff;
+    text-shadow: 0px 0px 2px black;
+}
+
+.val {
+    color: #fff;
+    font-size: 14px;
+}

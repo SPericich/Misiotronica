@@ -1,0 +1,7 @@
+.containerVenta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(77, 77, 77, 0.849);
+	margin: 30px;
+}
