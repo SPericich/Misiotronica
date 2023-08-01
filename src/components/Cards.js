@@ -3,10 +3,15 @@ import ItemCount from "./ItemCount";
 import React, { useCartContext } from "../context/CartContext";
 import "./Cards.css";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 function Cards(props) {
 	const { addProduct } = useCartContext();
 	const [goToCart, setGoToCart] = useState(false);
+
+    const scrollToTop = () => {
+		scroll.scrollToTop();
+	};
 
 	const onAdd = (quantity) => {
 		addProduct(props, quantity);
@@ -24,7 +29,7 @@ function Cards(props) {
 			<h3>{props.precio}</h3>
 			<div className="agregar-carrito">
 				{goToCart ? (
-					<Link to="/Carrito/">
+					<Link to="/Carrito/" onClick={scrollToTop}>
 						Ir al carrito<i class="bx bxs-right-arrow-circle"></i>
 					</Link>
 				) : (

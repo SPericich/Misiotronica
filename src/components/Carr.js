@@ -2,10 +2,15 @@ import React from "react";
 import { useCartContext } from "../context/CartContext";
 import ItemCart from "./ItemCart";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 import "./Carr.css";
 
 const Carr = () => {
 	const { cart, totalPrice, clearCart } = useCartContext();
+
+    const scrollToTop = () => {
+		scroll.scrollToTop();
+	};
 
     const pedido = () => {
         clearCart();
@@ -16,7 +21,7 @@ const Carr = () => {
 		return (
 			<div className="carrito-vacio">
 				<p>No hay artículos en el carrito</p>
-				<Link to="../Venta">Hacer compras</Link>
+				<Link to="../Venta" onClick={scrollToTop}>Hacer compras</Link>
 			</div>
 		);
 	}

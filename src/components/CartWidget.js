@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../context/CartContext";
+import { animateScroll as scroll } from "react-scroll";
 import "./CartWidget.css";
 
 export const CartWidget = () => {
 	const { totalProducts } = useCartContext();
 
+    const scrollToTop = () => {
+		scroll.scrollToTop();
+	};
+
 	return (
 		<div className="widget">
-			<Link to="/Carrito">
+			<Link to="/Carrito" onClick={scrollToTop}>
 				<i class="bx bx-cart"></i>
 			</Link>
  			<span>
