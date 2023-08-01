@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Navegacion from "./components/Nav";
 import Footer from "./components/Footer";
@@ -8,24 +9,53 @@ import Venta from "./pages/Venta";
 import Contacto from "./pages/Contacto";
 import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
+import CartProvider from "./context/CartContext";
+import Carrito from "./pages/Carrito";
 
 function App() {
-   return (
-      <div>
-         <Router>
-            <Navegacion />
-            <Routes >
-               <Route exact path="/" element={<Home />} />
-               <Route exact path="/About" element={<About />} />
-               <Route exact path="/Venta" element={<Venta />} />
-               <Route exact path="/Contacto" element={<Contacto />} />
-               <Route path="*" element={<NotFound />} />
-            </Routes>
-            <Footer />
-            <Copyright />
-         </Router>
-      </div>
-   );
+	return (
+		<div>
+			<Router>
+				<CartProvider>
+					<Navegacion />
+					<Routes>
+						<Route
+							exact
+							path="/"
+							element={<Home />}
+						/>
+						<Route
+							exact
+							path="/About"
+							element={<About />}
+						/>
+						<Route
+							exact
+							path="/Venta"
+							element={<Venta />}
+						/>
+						<Route
+							exact
+							path="/Contacto"
+							element={<Contacto />}
+						/>
+						<Route
+							exact
+							path="/Carrito"
+							element={<Carrito />}
+						/>
+						<Route
+							path="*"
+							element={<NotFound />}
+						/>
+					</Routes>
+
+					<Footer />
+					<Copyright />
+				</CartProvider>
+			</Router>
+		</div>
+	);
 }
 
 export default App;

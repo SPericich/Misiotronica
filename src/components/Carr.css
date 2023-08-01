@@ -1,0 +1,79 @@
+.cardProductos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.containerCarrito img {
+	width: 200px;
+	border-radius: 15px;
+}
+
+.containerCarrito p {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.carrito-vacio {
+/* 	text-align: center; */
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.carrito-vacio p {
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+    padding-bottom: 20px;
+}
+
+.carrito-vacio a {
+	background-color: #fde503;
+	color: #000000;
+	font-size: 16px;
+    text-align: center;
+	padding: 10px;
+	border-radius: 15px;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.carrito-vacio a:hover {
+	color: #fff;
+	text-shadow: 0px 0px 2px black;
+}
+
+.pedido h3 {
+	font-size: 25px;
+	color: #fde503;
+	text-shadow: 1px 1px 2px #000000;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.pedido {
+ 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.pedido button {
+	border: none;
+	background-color: #fde503;
+	font-size: 16px;
+    font-weight: 600;
+	padding: 10px;
+	border-radius: 15px;
+	font-size: 16px;
+	background-color: #fde503;
+}
+
+.pedido button:hover {
+	color: #fff;
+	text-shadow: 0px 0px 2px black;
+}

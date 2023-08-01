@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Titulo.css"
 
-function Seccion(props) {
+function Titulo(props) {
   return (
     <div>
       <h2 className='tituloS'>{props.tituloS}</h2>
@@ -9,4 +9,4 @@ function Seccion(props) {
   )
 }
 
-export default Seccion;
+export default Titulo

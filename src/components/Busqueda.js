@@ -4,8 +4,8 @@ import Cards from "./Cards";
 import productos from "../repositories/productos";
 
 const Busqueda = () => {
-	//Se muestra el catálogo entero asignándole a Filtrados el array completo 
-    //cuando la barra de búsqueda está vacía
+	//Se muestra el catálogo entero asignándole a Filtrados el array completo
+	//cuando la barra de búsqueda está vacía
 	useEffect(() => {
 		setup();
 	}, []);
@@ -27,12 +27,13 @@ const Busqueda = () => {
 		return tmp;
 	};
 
-	//Creo un arreglo temporal para almacenar los resultados de la búsqueda. 
-    //Convierto a minúscula y quito tildes tanto a lo que escribe el usuario 
-    //en la barra como a los nombres de los productos dentro del array original 
-    //y voy buscando coincidencias. Si coincide, el producto se agrega al array 
-    //temporal, que se asigna luego a Filtrados para mostrarse en pantalla
+	//Creo un arreglo temporal para almacenar los resultados de la búsqueda.
+	//Convierto a minúscula y quito tildes tanto a lo que escribe el usuario
+	//en la barra como a los nombres de los productos dentro del array original
+	//y voy buscando coincidencias. Si coincide, el producto se agrega al array
+	//temporal, que se asigna luego a Filtrados para mostrarse en pantalla
 	const handleBuscador = (e) => {
+        e.preventDefault()
 		const cadena = sacarTildes(e.target.value.toLowerCase());
 		const tmpArray = [];
 		const limite = productos.length;
@@ -49,7 +50,7 @@ const Busqueda = () => {
 
 	return (
 		<form>
-			<div className="barra"> 
+			<div className="barra">
 				<input
 					type="text"
 					autoComplete="off"
@@ -60,12 +61,14 @@ const Busqueda = () => {
 					<i className="bx bx-search"></i>
 				</div>
 			</div>
+
 			<div className="galeria">
 				{Filtrados &&
-					Filtrados.map(function (elem) {
+					Filtrados.map(function (elem, i) {
 						return (
-							<div>
+							<div key={i}>
 								<Cards
+									id={elem.id}
 									imagen={elem.imagen}
 									nombre={elem.nombre}
 									descripcion={elem.descripcion}

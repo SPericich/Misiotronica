@@ -1,0 +1,10 @@
+.containerCarrito {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: rgba(77, 77, 77, 0.849);
+	margin: 30px;
+	padding: 30px;
+	gap: 20px;
+}
