@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Social from "../components/Social";
+import "./Home.css";
 
 function Home() {
 	return (

@@ -51,6 +51,11 @@
     text-decoration: none;
 }
 
+.card .agregar-carrito button {
+    border:none;
+    background-color: transparent;
+}
+
 .card i {
 	font-size: 30px;
 	color: black;

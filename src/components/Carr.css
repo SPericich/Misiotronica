@@ -3,21 +3,23 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+    align-items: center;
 	gap: 20px;
 }
 
-.containerCarrito img {
-	width: 200px;
-	border-radius: 15px;
+.cardProductos {
+    color: #ffffff;
 }
 
-.containerCarrito p {
-	font-size: 16px;
-	color: #ffffff;
+.cardProductos i {
+    font-size: 25px;
+}
+
+.cardProductos i:hover {
+    color: #fde503;
 }
 
 .carrito-vacio {
-/* 	text-align: center; */
     display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -70,7 +72,6 @@
 	padding: 10px;
 	border-radius: 15px;
 	font-size: 16px;
-	background-color: #fde503;
 }
 
 .pedido button:hover {

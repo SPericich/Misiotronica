@@ -1,6 +1,6 @@
-import "./Comando.css";
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
+import "./Comando.css";
 
 function Comando(props) {
 	const scrollToTop = () => {

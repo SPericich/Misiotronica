@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser"; //esto hay que instalarlo para que ande
+import emailjs from "@emailjs/browser"; 
 import "./Formulario.css";
 
 const Formulario = () => {

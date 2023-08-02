@@ -1,0 +1,19 @@
+.item img {
+	width: 200px;
+	border-radius: 15px;
+}
+
+.item p {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.eliminar {
+    border: none;
+	background-color: #fde503;
+	font-size: 16px;
+    font-weight: 600;
+	padding: 10px;
+	border-radius: 15px;
+	font-size: 16px;
+}

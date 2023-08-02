@@ -30,13 +30,13 @@ function Footer() {
                   <h3>Contáctenos</h3>
                </li>
                <li>
-                  <p>+54 9 2477 550751</p>
+                  <p>+54 9 3952 8542697</p>
                </li>
                <li>
                   <p>0-800-ELECTROCUTADOS</p>
                </li>
                <li>
-                  <p>darkcof2@gmail.com</p>
+                  <p>misiotronicapyme@gmail.com</p>
                </li>
                <li>
                   <p>O venga y toque timbre</p>

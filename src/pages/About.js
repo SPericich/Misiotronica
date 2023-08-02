@@ -1,9 +1,9 @@
 import React from "react";
 import Titulo from "../components/Titulo";
-import "./About.css";
 import personal from "../assets/Personal.jpg";
 import fundador1 from "../assets/MartaGarrido.jpg";
 import fundador2 from "../assets/ArielAlonzo.jpg";
+import "./About.css";
 
 function About() {
 	return (

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ItemCount.css";
 
-//contar unidades de un mismo producto y mandar cantidad a Cards
-//para que agregue el producto
 export const ItemCount = ({ initial, stock, onAdd }) => {
 	const [count, setCount] = useState(parseInt(initial));
 

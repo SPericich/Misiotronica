@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "./Busqueda.css";
 import Cards from "./Cards";
 import productos from "../repositories/productos";
+import "./Busqueda.css";
 
 const Busqueda = () => {
 	//Se muestra el catálogo entero asignándole a Filtrados el array completo

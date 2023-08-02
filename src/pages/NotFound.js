@@ -1,7 +1,7 @@
 import React from "react";
-import "./NotFound.css";
 import gif from "../assets/bang-my-head.gif";
 import Titulo from "../components/Titulo";
+import "./NotFound.css";
 
 function NotFound() {
 	return (

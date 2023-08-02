@@ -1,21 +1,20 @@
 import { useState } from "react";
-import ItemCount from "./ItemCount";
 import React, { useCartContext } from "../context/CartContext";
-import "./Cards.css";
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
+import "./Cards.css";
 
 function Cards(props) {
 	const { addProduct } = useCartContext();
 	const [goToCart, setGoToCart] = useState(false);
 
-    const scrollToTop = () => {
-		scroll.scrollToTop();
-	};
-
 	const onAdd = (quantity) => {
 		addProduct(props, quantity);
 		setGoToCart(true);
+	};
+
+	const scrollToTop = () => {
+		scroll.scrollToTop();
 	};
 
 	return (
@@ -29,15 +28,16 @@ function Cards(props) {
 			<h3>{props.precio}</h3>
 			<div className="agregar-carrito">
 				{goToCart ? (
-					<Link to="/Carrito/" onClick={scrollToTop}>
+					<Link
+						to="/Carrito/"
+						onClick={scrollToTop}
+					>
 						Ir al carrito<i class="bx bxs-right-arrow-circle"></i>
 					</Link>
 				) : (
-					<ItemCount
-						initial={1}
-						stock={5}
-						onAdd={onAdd}
-					/>
+					<button onClick={() => onAdd(1)}>
+						<i className="bx bxs-cart-add "></i>
+					</button>
 				)}
 			</div>
 		</div>

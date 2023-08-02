@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Navegacion from "./components/Nav";
 import Footer from "./components/Footer";
 import Copyright from "./components/Copyright";
@@ -11,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 import CartProvider from "./context/CartContext";
 import Carrito from "./pages/Carrito";
+import "./App.css";
 
 function App() {
 	return (

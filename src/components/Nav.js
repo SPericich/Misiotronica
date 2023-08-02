@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import "./Nav.css";
 import LogoM from "./Logo.js";
 import Comando from "./Comando";
 import CartWidget from "./CartWidget";
+import "./Nav.css";
 
 function Navegacion() {
 	const [menu, setMenu] = useState(false);

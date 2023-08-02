@@ -8,26 +8,31 @@ import "./Carr.css";
 const Carr = () => {
 	const { cart, totalPrice, clearCart } = useCartContext();
 
-    const scrollToTop = () => {
-		scroll.scrollToTop();
+	const pedido = () => {
+		clearCart();
+		return alert("Eso es todo, amigos");
 	};
 
-    const pedido = () => {
-        clearCart();
-		return alert("Eso es todo amigos");
+	const scrollToTop = () => {
+		scroll.scrollToTop();
 	};
 
 	if (cart.length === 0) {
 		return (
 			<div className="carrito-vacio">
 				<p>No hay artículos en el carrito</p>
-				<Link to="../Venta" onClick={scrollToTop}>Hacer compras</Link>
+				<Link
+					to="../Venta"
+					onClick={scrollToTop}
+				>
+					Hacer compras
+				</Link>
 			</div>
 		);
 	}
 
 	return (
-		<div className="pedido">
+		<div>
 			<div className="cardProductos">
 				{cart.map((product) => (
 					<ItemCart
@@ -36,8 +41,10 @@ const Carr = () => {
 					/>
 				))}
 			</div>
-			<h3> Total: ${totalPrice()}</h3>
-            <button onClick={pedido}>Hacer pedido</button>
+			<div className="pedido">
+				<h3> Total: ${totalPrice()}</h3>
+				<button onClick={pedido}>Hacer pedido</button>
+			</div>
 		</div>
 	);
 };
