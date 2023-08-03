@@ -63,7 +63,8 @@ ul {
 	}
 
 	.nav ul.menu {
-		display: block;
+		display: none;
+        overflow: hidden;
 		position: absolute;
 		translate: 150px;
 		top: 60px;
@@ -73,13 +74,14 @@ ul {
 		height: 250px;
 		padding: 10px;
 		opacity: 0;
-		overflow: hidden;
 		transition: all 0.5s ease;
 	}
 
 	.nav ul.menu.isActive {
+        display: block;
 		opacity: 1;
 		translate: 0px;
+        transition: all 0.5s ease;
 	}
 
 	.nav a {
