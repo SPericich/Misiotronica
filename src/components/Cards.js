@@ -25,7 +25,7 @@ function Cards(props) {
 			/>
 			<h2>{props.nombre}</h2>
 			<p>{props.descripcion}</p>
-			<h3>{props.precio}</h3>
+			<h3>${props.precio}</h3>
 			<div className="agregar-carrito">
 				{goToCart ? (
 					<Link
