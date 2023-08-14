@@ -37,7 +37,7 @@
     padding-bottom: 20px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 
     .containerAbout {
         margin: 30px;
