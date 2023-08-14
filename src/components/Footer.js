@@ -27,7 +27,7 @@ function Footer() {
                   <i className="bx bxs-bell-ring"></i>
                </li>
                <li>
-                  <h3>Contáctenos</h3>
+                  <h3>CONTÁCTENOS</h3>
                </li>
                <li>
                   <p>+54 9 3952 8542697</p>
@@ -36,7 +36,7 @@ function Footer() {
                   <p>0-800-ELECTROCUTADOS</p>
                </li>
                <li>
-                  <p>misiotronicapyme@gmail.com</p>
+                  <p>misiopyme@gmail.com</p>
                </li>
                <li>
                   <p>O venga y toque timbre</p>

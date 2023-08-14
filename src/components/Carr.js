@@ -10,6 +10,7 @@ const Carr = () => {
 
 	const pedido = () => {
 		clearCart();
+        scrollToTop();
 		return alert("Eso es todo, amigos");
 	};
 

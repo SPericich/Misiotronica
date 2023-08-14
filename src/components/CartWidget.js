@@ -17,7 +17,7 @@ export const CartWidget = () => {
 				to="/Carrito"
 				onClick={scrollToTop}
 			>
-				<i class="bx bx-cart"></i>
+				<i className="bx bx-cart"></i>
 			</Link>
 			<span>
 				<p>{totalProducts() || ""}</p>

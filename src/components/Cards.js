@@ -32,7 +32,7 @@ function Cards(props) {
 						to="/Carrito/"
 						onClick={scrollToTop}
 					>
-						Ir al carrito<i class="bx bxs-right-arrow-circle"></i>
+						Ir al carrito<i className="bx bxs-right-arrow-circle"></i>
 					</Link>
 				) : (
 					<button onClick={() => onAdd(1)}>
