@@ -3,7 +3,7 @@ import ItemCount from "./ItemCount";
 import { useCartContext } from "../context/CartContext";
 import "./ItemCart.css";
 
-const ItemCart = ({ key, product }) => {
+const ItemCart = ({ iditem, product }) => {
 	const { removeProduct, addProduct } = useCartContext();
 
 	const onAdd = (quantity) => {
@@ -12,7 +12,7 @@ const ItemCart = ({ key, product }) => {
 
 	return (
 		<div
-			key={key}
+			key={iditem}
 			className="item"
 		>
 			<img

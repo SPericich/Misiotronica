@@ -14,6 +14,11 @@ const Carr = () => {
 		return alert("Eso es todo, amigos");
 	};
 
+    const vaciar = () => {
+        clearCart();
+        scrollToTop();
+    };
+
 	const scrollToTop = () => {
 		scroll.scrollToTop();
 	};
@@ -45,6 +50,7 @@ const Carr = () => {
 			<div className="pedido">
 				<h3> Total: ${totalPrice()}</h3>
 				<button onClick={pedido}>Hacer pedido</button>
+                <button onClick={vaciar}>Vaciar carrito</button>
 			</div>
 		</div>
 	);

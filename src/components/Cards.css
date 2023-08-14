@@ -1,6 +1,7 @@
 .card {
 	background-color: #ffe600d0;
 	padding: 10px;
+    border-radius: 15px;
 	width: max-content;
 }
 
@@ -22,7 +23,7 @@
 }
 
 .card p {
-	width: 200px;
+ 	width: 200px;
 	height: 40px;
 	font-size: 15px;
 	font-style: italic;
@@ -41,7 +42,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	font-size: 20px;
+	font-size: 16px;
 	color: rgb(0, 0, 0);
 }
 

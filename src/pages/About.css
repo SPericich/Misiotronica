@@ -8,9 +8,9 @@
 }
 
 .aboutContent p {
-	font-size: 16px;
+	font-size: 18px;
 	color: white;
-	line-height: 2.5;
+	line-height: 2;
 	padding-bottom: 20px;
 }
 
@@ -32,12 +32,12 @@
 	color: #fde503;
 }
 
-.grupal {
+.aboutContent .grupal {
 	width: 100%;
     padding-bottom: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
     .containerAbout {
         margin: 30px;
@@ -45,7 +45,8 @@
     }
 
 	.aboutContent p {
-		font-size: 14px;
+		font-size: 15px;
         line-height: 1.5;
+        text-align: center;
 	}
 }

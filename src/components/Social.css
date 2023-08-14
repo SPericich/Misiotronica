@@ -5,7 +5,8 @@
 
 .social p {
    text-align: center;
-   font-size: 30px;
+   font-size: 25px;
+   font-weight: bold;
    margin-bottom: 20px;
 }
 
@@ -27,7 +28,7 @@
 
 @media (max-width: 768px) {
    .social p {
-      font-size: 25px;
+      font-size: 20px;
    }
 
    .social .redes a {

@@ -36,7 +36,7 @@
 	color: #fde503;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
 	.containerF ul li {
 		line-height: 1.5;
@@ -50,7 +50,7 @@
 		font-size: 25px;
 	}
 
-	.containerF ul {
+  	.containerF ul {
 		margin: 20px;
-	}
+	} 
 }
