@@ -1,20 +1,14 @@
-import { useState } from "react";
 import React, { useCartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
-import { animateScroll as scroll } from "react-scroll";
+import scrolltop from "../helpers/scroll";
 import "./Cards.css";
 
 function Cards(props) {
-	const { addProduct } = useCartContext();
-	const [goToCart, setGoToCart] = useState(false);
+	const { addProduct, isInCart } = useCartContext();
 
 	const onAdd = (quantity) => {
 		addProduct(props, quantity);
-		setGoToCart(true);
-	};
-
-	const scrollToTop = () => {
-		scroll.scrollToTop();
+        isInCart(true);
 	};
 
 	return (
@@ -27,12 +21,12 @@ function Cards(props) {
 			<p>{props.descripcion}</p>
 			<h3>${props.precio}</h3>
 			<div className="agregar-carrito">
-				{goToCart ? (
+				{isInCart(props.id) ? (
 					<Link
 						to="/Carrito/"
-						onClick={scrollToTop}
+						onClick={scrolltop}
 					>
-						Ir al carrito<i className="bx bxs-right-arrow-circle"></i>
+						Terminar compra<i className="bx bxs-right-arrow-circle"></i>
 					</Link>
 				) : (
 					<button onClick={() => onAdd(1)}>
@@ -42,6 +36,7 @@ function Cards(props) {
 			</div>
 		</div>
 	);
+
 }
 
 export default Cards;

@@ -1,5 +1,5 @@
-import Carr from "../components/Carr";
 import React from "react";
+import Carr from "../components/Carr";
 import Titulo from "../components/Titulo";
 import "./Carrito.css";
 

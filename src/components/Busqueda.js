@@ -77,7 +77,6 @@ const Busqueda = () => {
 							</div>
 						);
 					})}
-				;
 			</div>
 		</form>
 	);

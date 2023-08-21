@@ -3,5 +3,6 @@
 	flex-direction: column;
 	justify-content: center;
 	background-color: rgba(77, 77, 77, 0.849);
+    border-radius: 15px;
 	margin: 30px;
 }

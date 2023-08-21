@@ -6,6 +6,7 @@
     margin: 30px;
     padding: 30px;
     background-color: rgba(77, 77, 77, 0.849);
+    border-radius: 15px;
 }
 
 .containerContacto p {
