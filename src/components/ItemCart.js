@@ -25,7 +25,7 @@ const ItemCart = ({ iditem, product }) => {
 				<p>Precio U: ${product.precio}</p>
 				<p>Subtotal: ${product.quantity * product.precio}</p>
 				<ItemCount
-					initial={1}
+					initial={product.quantity}
 					stock={5}
 					onAdd={onAdd}
 				/>
