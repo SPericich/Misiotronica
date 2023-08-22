@@ -1,24 +1,33 @@
 .contador {
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap:5px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
 }
 
- .contador i {
-    padding-left: 10px;
-} 
-
 .contador button {
-    display:flex;
-    background-color: #fde503;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    border:none;
-    border-radius: 50%;
-    color:black;
-    font-size: 16px;
-    margin: 5px;
+	display: flex;
+	background-color: #fde503;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+	color: black;
+	font-size: 16px;
+    font-weight: 600;
+	margin: 5px;
+}
+
+.contador button:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    font-weight: 600;
+}
+
+.contador button:disabled{
+    background-color: transparent;
+    color: transparent;
+    text-shadow: none;
 }

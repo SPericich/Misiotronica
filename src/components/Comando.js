@@ -9,7 +9,6 @@ function Comando(props) {
 			to={props.link}
 			className="enlace"
 			onClick={scrolltop}
-			smooth="true"
 		>
 			{props.texto}
 		</Link>

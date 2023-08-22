@@ -2,7 +2,7 @@ import React from "react";
 import { useCartContext } from "../context/CartContext";
 import ItemCart from "./ItemCart";
 import { Link } from "react-router-dom";
-import { animateScroll as scroll } from "react-scroll";
+import scrolltop from "../helpers/scroll";
 import "./Carr.css";
 
 const Carr = () => {
@@ -10,18 +10,14 @@ const Carr = () => {
 
 	const pedido = () => {
 		clearCart();
-        scrollToTop();
-		return alert("Eso es todo, amigos");
+        scrolltop();
+		return alert("Eso es todo, amigos 😄");
 	};
 
     const vaciar = () => {
         clearCart();
-        scrollToTop();
+        scrolltop();
     };
-
-	const scrollToTop = () => {
-		scroll.scrollToTop();
-	};
 
 	if (cart.length === 0) {
 		return (
@@ -29,7 +25,7 @@ const Carr = () => {
 				<p>No hay artículos en el carrito</p>
 				<Link
 					to="../Venta"
-					onClick={scrollToTop}
+					onClick={scrolltop}
 				>
 					Hacer compras
 				</Link>

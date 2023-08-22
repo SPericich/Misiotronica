@@ -116,7 +116,7 @@ const Formulario = () => {
 				(result) => {
 					console.log(result.text);
                     setValues({ nombre: "", apellido: "", email: "", consulta: "" });
-                    alert("¡Mensaje enviado!");
+                    alert("¡Mensaje enviado 📧!");
 				},
 				(error) => {
 					console.log(error.text);

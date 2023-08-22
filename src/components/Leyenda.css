@@ -35,6 +35,7 @@
 
 .leyend a:hover {
 	color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 @media (max-width: 768px) {

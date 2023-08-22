@@ -4,16 +4,6 @@ import "./ItemCount.css";
 export const ItemCount = ({ initial, stock, onAdd }) => {
 	const [count, setCount] = useState(parseInt(initial));
 
-	const decrease = (e) => {
-		e.preventDefault();
-		setCount(count - 1);
-	};
-
-	const increase = (e) => {
-		e.preventDefault();
-		setCount(count + 1);
-	};
-
 	useEffect(() => {
 		setCount(parseInt(initial));
 	}, [initial]);
@@ -22,23 +12,17 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
 		<div className="contador">
 			<button
 				disabled={count <= 1}
-				onClick={decrease}
+				onClick={() => onAdd(count - 1)}
 			>
 				-
 			</button>
 			<span>{count}</span>
 			<button
 				disabled={count >= stock}
-				onClick={increase}
+				onClick={() => onAdd(count + 1)}
 			>
 				+
 			</button>
-			<span
-				disabled={stock <= 0}
-				onClick={() => onAdd(count)}
-			>
-				<i className="bx bxs-cart-add "></i>
-			</span>
 		</div>
 	);
 };

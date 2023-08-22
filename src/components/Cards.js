@@ -25,12 +25,13 @@ function Cards(props) {
 					<Link
 						to="/Carrito/"
 						onClick={scrolltop}
+                        smooth="true"
 					>
-						Terminar compra<i className="bx bxs-right-arrow-circle"></i>
+						Ir la carrito<i className="bx bxs-right-arrow-circle"></i>
 					</Link>
 				) : (
 					<button onClick={() => onAdd(1)}>
-						<i className="bx bxs-cart-add "></i>
+						<i className='bx bxs-cart-add' ></i>
 					</button>
 				)}
 			</div>

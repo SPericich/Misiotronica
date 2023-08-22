@@ -36,6 +36,7 @@
 	background-color: #fde503;
 	color: #000000;
 	font-size: 16px;
+    font-weight: 600;
     text-align: center;
 	padding: 10px;
 	border-radius: 15px;
@@ -46,7 +47,7 @@
 
 .carrito-vacio a:hover {
 	color: #fff;
-	text-shadow: 0px 0px 2px black;
+	text-shadow: 1px 1px 1px #000000;
 }
 
 .pedido h3 {
@@ -77,5 +78,5 @@
 
 .pedido button:hover {
 	color: #fff;
-	text-shadow: 0px 0px 2px black;
+	text-shadow: 1px 1px 1px #000000;
 }

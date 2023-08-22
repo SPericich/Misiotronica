@@ -6,7 +6,7 @@ import "./ItemCart.css";
 const ItemCart = ({ iditem, product }) => {
 	const { removeProduct, addProduct } = useCartContext();
 
-	const onAdd = (quantity) => {
+ 	const onAdd = (quantity) => {
 		addProduct(product, quantity);
 	};
 
@@ -24,6 +24,8 @@ const ItemCart = ({ iditem, product }) => {
 				<p>Cantidad: {product.quantity}</p>
 				<p>Precio U: ${product.precio}</p>
 				<p>Subtotal: ${product.quantity * product.precio}</p>
+                <br/>
+                <p>Modificar cantidad</p>
 				<ItemCount
 					initial={product.quantity}
 					stock={5}
